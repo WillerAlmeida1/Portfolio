@@ -86,6 +86,7 @@ colocar esse efeito em algum lugar ksksk vai ficar legal :D
 }
 
 .texto-ilustrativo {
+    user-select: none;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 40px;
     display: flex;
@@ -98,9 +99,9 @@ colocar esse efeito em algum lugar ksksk vai ficar legal :D
     margin: 0;
     writing-mode: vertical-rl; 
     transform: rotate(180deg); 
-    position: relative;    
-    top: 27vh; 
-    left: 100vh; 
+    margin-top: 35vh;
+    position: relative;
+    left: 85%;
 }
 
 /*Parte sobre mim*/
@@ -160,3 +161,14 @@ ul.lista-habilidades2 {
     color: greenyellow;
     height: 100vh;
 }
+
+
+/* 
+Aqui para fazer o efeito de email seguir o scroll
+
+elemento {
+    position: fixed;
+    left: 0;
+  }
+  
+*/
