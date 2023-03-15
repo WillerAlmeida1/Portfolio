@@ -19,6 +19,7 @@ header {
     align-items: center;
     border-bottom: 1px solid greenyellow;
     margin: 20px 0 0 0;
+    padding: 0vh 1vh 0vh 1vh;
 }
 nav ul {
     display: flex;
@@ -56,12 +57,14 @@ colocar esse efeito em algum lugar ksksk vai ficar legal :D
 
 .apresentacao-conteudo {
     height: 100vh;
+    
 }
 
 .apresentacao {
     font-family: 'IBM Plex Mono', monospace;
     margin: 15vh 0vh 0vh 15vh;
     color: greenyellow;
+    height: 100vh;
 }
 
 .titulo-apresentacao {
@@ -72,17 +75,88 @@ colocar esse efeito em algum lugar ksksk vai ficar legal :D
 
 .subtitulo-apresentacao {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .texto-apresentacao {
     width: 50vh;
     opacity: 0.5;
+    font-size: 20px;
     /*filter: blur(1px);*/
+}
+
+.texto-ilustrativo {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 40px;
+    display: flex;
+    color: greenyellow;
+    height: 10vh;
+    padding: 0vh;
+    opacity: 0.3;
+    filter: blur(3px);
+    font-weight: 700;
+    margin: 0;
+    writing-mode: vertical-rl; 
+    transform: rotate(180deg); 
+    position: relative;    
+    top: 27vh; 
+    left: 100vh; 
+}
+
+/*Parte sobre mim*/
+
+.about {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 15vh 0vh 0vh 15vh;
+    color: greenyellow;
+    height: 100vh;
+}
+
+ul.lista-habilidades {
+    display: flex;
+    display: inline-block;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+
+ul.lista-habilidades2 {
+    display: flex;
+    display: inline-block;
+    align-items: center;
+}
+
+.lista-habilidades {
+    padding-left: 5vh;
+}
+
+.about-text {
+    margin-top: 1vh;
+    padding-left: 5vh;
+    padding-right: 50vh;
+    opacity: 0.5;
+    margin-bottom: 1vh;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: greenyellow;
+}
+  
+ 
+::-webkit-scrollbar-thumb {
+    background-color:  rgb(3, 4, 38);
 }
 
 /*Parte dos Projetos*/
 
 .projetos {
-    margin-top: 100vh;
+    display: flex;
+}
+
+.projeto-texto {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 15vh 0vh 0vh 15vh;
+    color: greenyellow;
+    height: 100vh;
 }
