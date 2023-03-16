@@ -17,6 +17,7 @@ h1 {
 }
 
 header {
+    opacity: 0.8;
     z-index: 1;
     background-color:  rgb(3, 4, 38);
     font-family: 'Rubik', sans-serif;
@@ -115,6 +116,7 @@ colocar esse efeito em algum lugar ksksk vai ficar legal :D
 
 /*Parte sobre mim*/
 .titulo {
+    padding-left: 2%;
     font-family: 'IBM Plex Mono', monospace;
     color: greenyellow;
 }
@@ -123,9 +125,13 @@ colocar esse efeito em algum lugar ksksk vai ficar legal :D
     display: flex;
     align-items: center;
     font-family: 'IBM Plex Mono', monospace;
-    margin: 0vh 0vh 0vh 0vh;
+    margin: 2vh 0vh 0vh 0vh;
     color: greenyellow;
-    height: 80vh;
+    height: 50vh;
+}
+
+#sobre-mim {
+    padding-top: 20vh;
 }
 
 img {
@@ -172,8 +178,42 @@ ul.lista-habilidades2 {
 
 /*Parte dos Projetos*/
 
-.projetos {
+
+
+.container {
+    padding-top: 5vh;
     display: flex;
+    flex: wrap;
+    justify-content: center;
+}
+
+.projeto {
+    flex-basis: 25%; /* define a largura de cada projeto */
+    margin: 20px; /* adiciona margem para separar os projetos */
+    text-align: center; /* centraliza o conteúdo dentro de cada projeto */
+    align-items: center;
+}
+
+.projeto h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    color: greenyellow;
+    margin-bottom: 2%;
+}
+
+.projeto img{
+    margin-top: 30%;
+    align-items: center;
+    width: 100%;
+}
+
+.container p{
+    opacity: 0.5;
+    font-family: 'IBM Plex Mono', monospace;
+    color: greenyellow;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(16, 19, 47);
+    border-radius: 15px;
 }
 
 .projeto-texto {
@@ -183,6 +223,29 @@ ul.lista-habilidades2 {
     height: 100vh;
 }
 
+.titulo-projeto {
+    display: flex;
+}
+
+.btn-projeto {
+    font-family: 'IBM Plex Mono';
+    color: greenyellow;
+    margin-top: 2%;
+    background-color:  rgb(3, 4, 38);
+    border: 2px solid greenyellow;;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.btn-projeto:hover {
+  background-color: greenyellow;
+  opacity: 1;
+  color: black;
+}
 
 /* 
 Aqui para fazer o efeito de email seguir o scroll
