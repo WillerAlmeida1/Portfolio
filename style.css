@@ -8,18 +8,27 @@
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1 {
     color: greenyellow;
 }
 
 header {
+    z-index: 1;
+    background-color:  rgb(3, 4, 38);
     font-family: 'Rubik', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid greenyellow;
-    margin: 20px 0 0 0;
-    padding: 0vh 1vh 0vh 1vh;
+    padding: 0vh 0vh 0vh 0vh;
+    position: fixed;
+    top: 0;
+    height: 10%;
+    width: 100%;
 }
 nav ul {
     display: flex;
@@ -105,12 +114,24 @@ colocar esse efeito em algum lugar ksksk vai ficar legal :D
 }
 
 /*Parte sobre mim*/
+.titulo {
+    font-family: 'IBM Plex Mono', monospace;
+    color: greenyellow;
+}
 
 .about {
+    display: flex;
+    align-items: center;
     font-family: 'IBM Plex Mono', monospace;
-    margin: 15vh 0vh 0vh 15vh;
+    margin: 0vh 0vh 0vh 0vh;
     color: greenyellow;
-    height: 100vh;
+    height: 80vh;
+}
+
+img {
+    margin-right: 5vh;
+    width: 40vh;
+    opacity: 0.5;
 }
 
 ul.lista-habilidades {
@@ -134,7 +155,7 @@ ul.lista-habilidades2 {
 .about-text {
     margin-top: 1vh;
     padding-left: 5vh;
-    padding-right: 50vh;
+    padding-right: 20vh;
     opacity: 0.5;
     margin-bottom: 1vh;
 }
